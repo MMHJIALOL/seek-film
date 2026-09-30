@@ -2,6 +2,10 @@
 
 A Claude Code skill for deterministic explainer motion graphics: one HTML page, every frame a pure function `seek(t)`, rendered to 60 fps MP4 with sub-frame motion blur (Playwright + ffmpeg), plus a layout audit and a single-frame pop scan.
 
+![seek-film demo](assets/preview.gif)
+
+*The 6 s demo in `template/`, rendered with `node render.js` (GIF downscaled; the real output is 1920x1080 at 60 fps).*
+
 ## Install
 
 ```bash
@@ -20,4 +24,6 @@ node render.js            # out/film.mp4
 node post.js              # per-scene cuts + pop scan
 ```
 
-Fonts: Inter and JetBrains Mono, SIL Open Font License.
+## License
+
+Code: MIT (see [LICENSE](LICENSE)). Fonts in `template/fonts`: Inter and JetBrains Mono, SIL Open Font License 1.1.
